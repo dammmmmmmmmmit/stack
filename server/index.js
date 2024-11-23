@@ -2,8 +2,8 @@ const express = require('express');
 const cors = require('cors');
 const dotenv =require('dotenv');
 const connectDB = require(`./config/database`);
-const student = require('./models/students');
-const company = require('./models/company');
+const Student = require('./models/students');
+const Company = require('./models/company');
 
 dotenv.config();
 
@@ -22,7 +22,7 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT,()=>{
     console.log(`server running on http://localhost:${PORT}`);
 });
-
+o
 app.post('/api/test/student',async(req,res)=>{
     try{
         const student = new Student({
