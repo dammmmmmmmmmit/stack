@@ -2,7 +2,8 @@ const express = require('express');
 const cors = require('cors');
 const dotenv =require('dotenv');
 const connectDB = require(`./config/database`);
-const {student, company} = require('./models');
+const student = require('./models/students');
+const company = require('./models/company');
 
 dotenv.config();
 
