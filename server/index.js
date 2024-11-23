@@ -24,7 +24,7 @@ app.listen(PORT,()=>{
 
 app.post('/api/test/student',async(req,res)=>{
     try{
-        const student = new student({
+        const student = new Student({
             name:'abhi doe',
             email:'abhidoe@muje.com',
             password:'passstudent',
@@ -43,7 +43,7 @@ app.post('/api/test/student',async(req,res)=>{
 
 app.post('/api/test/company',async(req,res)=>{
     try{
-        const company = new company({
+        const company = new Company({
             name: 'tcomp',
             email:'tcomp@email.com',
             password:'passtcomp',

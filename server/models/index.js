@@ -1,4 +1,4 @@
-const students =require('./students');
-const company =require('./company');
+const students =require('../models/students');
+const company =require('../models/company');
 
 module.exports={students,company};
